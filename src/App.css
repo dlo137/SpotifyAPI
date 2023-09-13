@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+
+p, h1{
+  border-style: none;
+  gap: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*============= Page Wrapper =============*/
+.App-Wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 33, 33);
+  height: 100vh;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*============= Container for everything =============*/
+.Spotify-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 70%;
+  gap: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 3rem;
+  filter: drop-shadow(20px 10px 4px #1DB954);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*============= left section =============*/
+.Album-Cover-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+
+  border-radius: 3rem;
+  width: 40%;
+  height: 80%;
+  margin: 2rem 2rem 2rem 2rem;
+
+  overflow: hidden;
+
+}
+
+.Album-Cover-Box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* This will make the image cover the container while maintaining its aspect ratio */
+}
+
+/*============= right section =============*/
+.Recent-Song-Artist{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  margin: 2rem 2rem 2rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Recent-Song-Artist > .recently-played{
+  font-style: italic;
+  color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Recent-Song-Artist > h1, p{
+  color: #1DB954;
+}
+
+.Recent-Song-Artist > h1{
+  font-size: 42px;
+}
+
+.Recent-Song-Artist > p{
+  font-size: 21px;
 }
