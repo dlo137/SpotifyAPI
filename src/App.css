@@ -1,0 +1,81 @@
+
+p, h1{
+  border-style: none;
+  gap: 0;
+  margin: 0;
+}
+
+/*============= Page Wrapper =============*/
+.App-Wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 33, 33);
+  height: 100vh;
+  padding: 0;
+}
+
+/*============= Container for everything =============*/
+.Spotify-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 70%;
+  gap: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 3rem;
+  filter: drop-shadow(20px 10px 4px #1DB954);
+}
+
+/*============= left section =============*/
+.Album-Cover-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+
+  border-radius: 3rem;
+  width: 40%;
+  height: 80%;
+  margin: 2rem 2rem 2rem 2rem;
+
+  overflow: hidden;
+
+}
+
+.Album-Cover-Box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* This will make the image cover the container while maintaining its aspect ratio */
+}
+
+/*============= right section =============*/
+.Recent-Song-Artist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.Recent-Song-Artist > .recently-played{
+  font-style: italic;
+  color: gray;
+}
+
+.Recent-Song-Artist > h1, p{
+  color: #1DB954;
+}
+
+.Recent-Song-Artist > h1{
+  font-size: 42px;
+}
+
+.Recent-Song-Artist > p{
+  font-size: 21px;
+}
